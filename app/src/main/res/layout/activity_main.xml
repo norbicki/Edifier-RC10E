@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/model"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/edifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/edifier"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/model"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <ImageButton
+        android:id="@+id/power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/power"
+        app:layout_constraintTop_toTopOf="@id/guideline_top"
+        app:layout_constraintRight_toLeftOf="@id/guideline_center"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/mute"
+        app:layout_constraintTop_toTopOf="@id/guideline_top"
+        app:layout_constraintLeft_toRightOf="@id/guideline_center"/>
+
+    <ImageButton
+        android:id="@+id/volume_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/volume_down"
+        app:layout_constraintTop_toBottomOf="@id/power"
+        app:layout_constraintRight_toLeftOf="@id/guideline_center"/>
+
+    <ImageButton
+        android:id="@+id/volume_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/volume_up"
+        app:layout_constraintTop_toBottomOf="@id/mute"
+        app:layout_constraintLeft_toRightOf="@id/guideline_center"/>
+
+    <ImageButton
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/line1"
+        app:layout_constraintTop_toBottomOf="@id/volume_down"
+        app:layout_constraintRight_toLeftOf="@id/guideline_center"/>
+
+    <ImageButton
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/line2"
+        app:layout_constraintTop_toBottomOf="@id/volume_up"
+        app:layout_constraintLeft_toRightOf="@id/guideline_center"/>
+
+    <ImageButton
+        android:id="@+id/opt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/opt"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        app:layout_constraintRight_toLeftOf="@id/guideline_center"/>
+
+    <ImageButton
+        android:id="@+id/cox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/cox"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        app:layout_constraintLeft_toRightOf="@id/guideline_center"/>
+
+    <ImageButton
+        android:id="@+id/bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/bluetooth"
+        app:layout_constraintTop_toBottomOf="@id/opt"
+        app:layout_constraintRight_toLeftOf="@id/guideline_center"/>
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/play"
+        app:layout_constraintTop_toBottomOf="@id/cox"
+        app:layout_constraintLeft_toRightOf="@id/guideline_center"/>
+
+    <ImageButton
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/prev"
+        app:layout_constraintTop_toBottomOf="@id/bluetooth"
+        app:layout_constraintRight_toLeftOf="@id/guideline_center"/>
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/next"
+        app:layout_constraintTop_toBottomOf="@id/play"
+        app:layout_constraintLeft_toRightOf="@id/guideline_center"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
