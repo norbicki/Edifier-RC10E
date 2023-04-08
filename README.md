@@ -6,4 +6,4 @@ Remote control for Edifier R1280DB speakers
 - phone with infrared emitter
 
 #### Installation:
-Download the .apk file from the [folder](https://github.com/norbert78x/Edifier-RC10E/tree/master/app/release) and installi on your device.
+Download the .apk file from the [folder](https://github.com/norbert78x/Edifier-RC10E/tree/master/app/release) and install on your device.
