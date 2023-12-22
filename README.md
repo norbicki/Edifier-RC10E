@@ -1,4 +1,4 @@
-[![Test](https://img.shields.io/github/release/norbicki/Edifier-RC10E.svg?logo=github)](https://github.com/norbicki/Edifier-RC10E/releases/latest)
+[![Latest release](https://img.shields.io/github/release/norbicki/Edifier-RC10E.svg?logo=github)](https://github.com/norbicki/Edifier-RC10E/releases/latest)
 # Edifier-RC10E
 Remote control for Edifier R1280DB speakers
 
